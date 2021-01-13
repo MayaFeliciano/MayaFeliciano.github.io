@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>Homepage</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Maya Feliciano">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="revised" content="3-11-2020">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Special+Elite&family=Unna&display=swap" rel="stylesheet">
+        <link rel="icon" href="icon.png" type="image/png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            #navbar {
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 2;
+            }
+            #navbar a{
+                float: left;
+                display: block;
+                color: RGB(25, 24, 23);
+                text-align: center;
+                padding: 19px 19px;
+                margin-top: 19px;
+                margin-left: 19px;
+                text-decoration: none;
+                font-family: 'Special Elite', cursive;
+                font-size: 1.75vw;
+                font-weight:lighter;
+                transition: top 0.3s;
+                z-index: 2;
+            }
+            #navbar a:hover {
+                color: RGB(128, 5, 5);
+                z-index: 2;
+            }
+            #navbarr {
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                transition: top 0.3s;
+                z-index: 2;
+            }
+            #navbarr a{
+                float: right;
+                display: block;
+                color: RGB(25, 24, 23);
+                text-align: center;
+                padding: 19px 19px 19px;
+                margin-top: 19px;
+                margin-right: 19px;
+                text-decoration: none;
+                font-family: 'Special Elite', cursive;
+                font-size: 1.75vw;
+                font-weight:lighter;
+                z-index: 2;
+            }
+            #navbr {
+                float: inherit;
+                margin-left: auto;
+                margin-right: auto;
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                display: block;
+                color: RGB(25, 24, 23);
+                text-align: center;
+                padding: 19px 19px;
+                text-decoration: none;
+                font-family: 'Special Elite', cursive;
+                font-size: 23px;
+                transition: top 0.3s;
+                z-index: 2;
+                background-image: url(doodle%202.png);
+          }
+            body{
+                background-image: url(doodle%202.png);
+            }
+            .main {
+                padding: 40px;
+                margin-top: 40px;
+            }
+            .container {
+                margin-top: 70px;
+                float:left;
+                position: relative;
+                width: 50%;
+            }
+            .image {
+                display: block;
+                width: 90%;
+                height: auto;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 90%;
+                opacity: 0;
+                transition: .5s ease;
+                background-image: url(notebook.png);
+            }
+            .container:hover .overlay {
+                opacity: 1;
+            }
+            .text {
+                color: black;
+                font-size: 1.75vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .containerr {
+                margin-top: 70px;
+                float: right;
+                position: relative;
+                width: 50%;
+                display:block;
+            }
+            .containerr h1{
+                font-size: 3vw;
+                font-family: 'Special Elite', cursive;
+                position: relative;
+            }
+            .containerr h2{
+                text-indent: 2vw;
+                position: relative;
+                font-size: 2.35vw;
+                font-family: 'Special Elite', cursive;
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navbr">
+            <img src="icon.png" alt="icon" width="100">
+        </div>
+        <div id="navbarr">
+            <a href="author.html">Maya Feliciano, 9 - Samat</a>
+        </div>
+        <div id="navbar">
+            <a href="index.html">Home</a>
+            <a href="content.html">Essay</a>
+            <a href="author.html">About</a>
+        </div>
+        <div class="main">
+            <div class="container" >
+                <img src="authorp.png" alt="author" class="image">
+                <div class="overlay">
+                    <div class="text"> A doodle. Drawn by me.
+                    </div>
+                </div>
+            </div>
+            <div class="containerr">
+                <h1>about the author.</h1>
+                <h2>i am a student in batch 2024 of pshs-clc who is trying their hardest to study hard and submit requirements.</h2>
+                <h2>my motivation for the essay was the realization of the extent of corruption in a lot of government institutions. i wanted to educate myself so that i could also help educate others about the situation.</h2>
+            </div>
+        </div>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("navbar").style.top = "0";
+                    } else {
+                        document.getElementById("navbar").style.top = "-150px";
+                    }
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("navbarr").style.top = "0";
+                    } else {
+                        document.getElementById("navbarr").style.top = "-150px";
+                    }
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("navbr").style.top = "0";
+                    } else {
+                        document.getElementById("navbr").style.top = "-150px";
+                    }
+                prevScrollpos = currentScrollPos;
+            }
+        </script>
+    </body>
+</html>

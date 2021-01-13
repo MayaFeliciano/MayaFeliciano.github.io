@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>Homepage</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Maya Feliciano">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="revised" content="3-11-2020">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Special+Elite&family=Unna&display=swap" rel="stylesheet">
+        <link rel="icon" href="icon.png" type="image/png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            #navbar {
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 2;
+            }
+            #navbar a{
+                float: left;
+                display: block;
+                color: RGB(25, 24, 23);
+                text-align: center;
+                padding: 19px 19px;
+                margin-top: 19px;
+                margin-left: 19px;
+                text-decoration: none;
+                font-family: 'Special Elite', cursive;
+                font-size: 1.75vw;
+                font-weight:lighter;
+                transition: top 0.3s;
+                z-index: 2;
+            }
+            #navbar a:hover {
+                color: RGB(128, 5, 5);
+                z-index: 2;
+            }
+            #navbarr {
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                transition: top 0.3s;
+                z-index: 2;
+            }
+            #navbarr a{
+                float: right;
+                display: block;
+                color: RGB(25, 24, 23);
+                text-align: center;
+                padding: 19px 19px 19px;
+                margin-top: 19px;
+                margin-right: 19px;
+                text-decoration: none;
+                font-family: 'Special Elite', cursive;
+                font-size: 1.75vw;
+                font-weight:lighter;
+                z-index: 2;
+            }
+            #navbr {
+                float: inherit;
+                margin-left: auto;
+                margin-right: auto;
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                display: block;
+                color: RGB(25, 24, 23);
+                text-align: center;
+                padding: 19px 19px;
+                text-decoration: none;
+                font-family: 'Special Elite', cursive;
+                font-size: 23px;
+                transition: top 0.3s;
+                z-index: 2;
+                background-image: url(doodle%202.png);
+           }
+            body{
+                background-image: url(doodle%202.png);
+            }
+            .main {
+                padding: 40px;
+                margin-top: 40px;
+                float: inherit;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .container {
+                position: absolute;
+                width: 70%;
+                margin-left: 15vw;
+            }
+            .image {
+                align-content: center;
+                display: block;
+                width: 70%;
+                height: auto;
+                padding-left: 7vw;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 90%;
+                opacity: 0;
+                transition: .5s ease;
+                background-image: url(notebook.png);
+            }
+            .container:hover .overlay {
+                opacity: 1;
+            }
+            .text {
+                color: black;
+                font-size: 1.2vw;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .containr{
+                margin-top: 1.5vw;
+                margin-bottom: 1.5vw;
+                float: inherit;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                display: block;
+                z-index: -1;
+            }
+            .containr h1{
+                padding-top: 2.8vw;
+                font-size: 3vw;
+                font-family: 'Special Elite', cursive;
+            }
+            .containerr {
+                margin-top: 1.5vw;
+                float: inherit;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                display: block;
+                z-index: -1;
+                padding: 1.5vw;
+                border: 1vw solid rgb(43, 43, 43);
+            }
+            .containerr p{
+                display: block;
+                font-family: 'Open Sans';
+                margin-top: 3vw;
+                font-size: 1.5vw;
+                line-height: 1.5;
+                text-align: justify;
+                text-indent: 1vw;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navbr">
+            <img src="icon.png" alt="icon" width="100">
+        </div>
+        <div id="navbarr">
+            <a href="author.html">Maya Feliciano, 9 - Samat</a>
+        </div>
+        <div id="navbar">
+            <a href="index.html">Home</a>
+            <a href="content.html">Essay</a>
+            <a href="author.html">About</a>
+        </div>
+        <div class="main">
+            <div class="containr">
+                    <h1>corruption, the faulty thread.</h1>
+            </div>
+            <div class="containerr">
+                <p> Corruption, the faulty thread that can be found tightly woven into the rope society uses to tie itself together, is a term almost anyone has, at the very least, an inkling of what it is about. From hearing news stations worldwide talk about the corruption in businesses and governments to hearing people down the street talking about it, corruption can be heard of from almost anywhere. </p>
+                <p>Corruption, like any other faulty thread, caused the rope it is embedded in to become less durable, and eventually, that rope started to fray. Now, the question we all have is; how can we fix the fraying rope?</p>
+                <p>In late January of 2019, the Russian Justice Ministry proposed draft legislation that would legalize corruption. The proposal would decriminalize corruption when circumstances beyond the official’s control make corruption unavoidable. Now, my question is, why should we stop at circumstances that make corruption unavoidable? In a lot of instances, it can be claimed that corruption was unavoidable even though it was not. So, why not just make all forms of corruption legal?</p>
+                <p>This proposal may seem like it will cause more problems than solutions. However, I believe that this is not the case. This is due to the fact that nothing hinders people in power from being corrupt. Even though strict laws are in place that state that they should not be corrupt, they still find ways to forge and lie their way out of being held responsible for their actions. Thus, nothing would change if we made corruption legal, except for the people already benefitting from it benefiting even more. </p>
+                <p>Moreover, as seen in an experiment conducted by Katherine A. DeCelles, a professor at the Rotman School of Management at the University of Toronto, it was found that power does not cause corruption. It simply enhances people's moral characteristics. Meaning that people who are already unethical in their daily lives would behave in the same way if they received any form of power, whereas people who worry about behaving ethically tend to worry about the good of society. </p>
+                <p>Thus, decriminalizing corruption should not be an issue since the people we elect or put in positions of power always have the best interests of the people they have power over in mind.</p>
+                <p>In conclusion, to solve the problem of corruption and fix the fraying rope, we simply have to decriminalize corruption. As stated above, though this may seem like a whimsical and nonsensical proposal, it reaps many benefits.</p>
+            </div>
+            <div class="container">
+                <img src="typewriter.png" alt="typewriter" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <p>Sources:</p>
+                        <p>
+                            Mahung, S. (2019, March 25). Can “Force Majeure” Be A Justification for Corruption? Russia Believes So. Retrieved October 24, 2020, from https://globalanticorruptionblog.com/2019/03/25/can-force-majeure-be-a-justification-for-corruption- russia-believes-so/
+                        </p>
+                        <p>
+                            Cordeiro, T. (2018, September 14). Science explains corruption: What goes on in the minds of corrupt politicians. Retrieved October 24, 2020, from https://www.gazetadopovo.com.br/wiseup-news/science-explains-corruption-what-goes-on-in-the-minds-of-corrupt-politicians/
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("navbar").style.top = "0";
+                    } else {
+                        document.getElementById("navbar").style.top = "-150px";
+                    }
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("navbarr").style.top = "0";
+                    } else {
+                        document.getElementById("navbarr").style.top = "-150px";
+                    }
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("navbr").style.top = "0";
+                    } else {
+                        document.getElementById("navbr").style.top = "-150px";
+                    }
+                prevScrollpos = currentScrollPos;
+            }
+        </script>
+    </body>
+</html>
